@@ -58,4 +58,5 @@ public class SetsAdapter extends BaseAdapter{
         return view;
 
     }
+
 }
