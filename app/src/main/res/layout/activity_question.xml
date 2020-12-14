@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#FF9800"
+        android:background="#F44336"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,25 +21,25 @@
             android:id="@+id/quest_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF9800"
+            android:background="#F44336"
             android:gravity="center"
             android:padding="8dp"
             android:text="1/10"
+            android:textColor="@color/white"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:layout_margin="16dp"
-            android:background="#FF9800"
+            android:background="#F44336"
             android:gravity="center"
             android:text="Question"
+            android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/white" />
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout

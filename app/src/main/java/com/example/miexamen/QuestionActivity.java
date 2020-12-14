@@ -267,5 +267,12 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                 });
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        countDown.cancel();
+    }
+
 
 }
