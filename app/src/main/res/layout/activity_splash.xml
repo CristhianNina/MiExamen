@@ -4,36 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
     android:background="@drawable/gradient_background"
-    >
+    tools:context=".SplashActivity">
 
     <ImageView
-        android:id="@+id/appimageView"
-        android:layout_width="146dp"
-        android:layout_height="144dp"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/appName"
-        android:layout_width="224dp"
-        android:layout_height="45dp"
-        android:fontFamily="cursive"
-        android:gravity="center"
-        android:text="My Examen"
-        android:textColor="#eceff1"
-        android:textSize="36sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="My Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appimageView"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

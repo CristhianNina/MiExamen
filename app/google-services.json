@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "631028835217",
-    "project_id": "miexamen-d1457",
-    "storage_bucket": "miexamen-d1457.appspot.com"
+    "project_number": "331763427512",
+    "project_id": "miexamen-2ac89",
+    "storage_bucket": "miexamen-2ac89.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:631028835217:android:facabe56e0151d1beff030",
+        "mobilesdk_app_id": "1:331763427512:android:208fa7c9abd881f423ac4d",
         "android_client_info": {
           "package_name": "com.example.miexamen"
         }
       },
       "oauth_client": [
         {
-          "client_id": "631028835217-dh25c8bmgdhho71khlg7bpckl0i07bde.apps.googleusercontent.com",
+          "client_id": "331763427512-lk2sj6ag9abr6618il7k886nnkbricj9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA_FdxT4o764OHhd2n4JeXxMdLR23JA-wQ"
+          "current_key": "AIzaSyCJX_ZczyfrukLD2uZUQFtMdswOxCRLT0c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "631028835217-dh25c8bmgdhho71khlg7bpckl0i07bde.apps.googleusercontent.com",
+              "client_id": "331763427512-lk2sj6ag9abr6618il7k886nnkbricj9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
