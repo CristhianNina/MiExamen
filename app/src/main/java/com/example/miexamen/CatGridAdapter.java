@@ -44,6 +44,7 @@ public class CatGridAdapter extends BaseAdapter {
             view = convertView;
         }
 
+//posición de los sets
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +52,7 @@ public class CatGridAdapter extends BaseAdapter {
 
                 Intent intent = new Intent(parent.getContext(),SetsActivity.class);
                 intent.putExtra("CATEGORY", catList.get(position));
+                intent.putExtra("CATEGORY_ID",position + 1);
                 parent.getContext().startActivity(intent);
 
             }
