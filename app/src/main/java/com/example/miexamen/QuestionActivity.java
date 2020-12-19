@@ -1,13 +1,16 @@
 package com.example.miexamen;
 
 import android.animation.Animator;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
@@ -37,6 +40,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     private int score;
     private FirebaseFirestore firestore;
     private int setNo;
+    private Dialog loadingDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +61,14 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         option3.setOnClickListener(this);
         option4.setOnClickListener(this);
 
-        setNo = getIntent().getIntExtra("SETNO", 1);
+        loadingDialog = new Dialog(QuestionActivity.this);
+        loadingDialog.setContentView(R.layout.loading_progressbar);
+        loadingDialog.setCancelable(false);
+        loadingDialog.getWindow().setBackgroundDrawableResource(R.drawable.progress_background);
+        loadingDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        loadingDialog.show();
 
+        setNo = getIntent().getIntExtra("SETNO", 1);
         firestore = FirebaseFirestore.getInstance();
 
         getQuestionList();
@@ -81,6 +91,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                 {
                     QuerySnapshot questions = task.getResult();
 
+                    Log.d("loggggggggggggggggggggg", String.valueOf(questions.size()));
                     for (QueryDocumentSnapshot doc : questions){
                         questionList.add(new Question(doc.getString("QUESTION"),
                                 doc.getString("A"),
@@ -88,16 +99,15 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                                 doc.getString("C"),
                                 doc.getString("D"),
                                 Integer.valueOf(doc.getString("ANSWER"))
-
                                 ));
-
-
                     }
+
+                    setQuestion();
 
                 }
                 else
                 {
-                    Toast.makeText(SetsActivity.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QuestionActivity.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                 }
 
                 loadingDialog.cancel();
@@ -105,8 +115,6 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             }
         });
 
-
-        setQuestion();
     }
 
 
