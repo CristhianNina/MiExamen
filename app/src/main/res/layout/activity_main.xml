@@ -36,7 +36,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="188dp"
         android:background="@drawable/round_corner"
-        android:text="Comienza"
+        android:text="Comenzar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
