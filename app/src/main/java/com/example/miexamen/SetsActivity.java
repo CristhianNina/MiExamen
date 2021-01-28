@@ -89,15 +89,6 @@ public class SetsActivity extends AppCompatActivity {
                     }
                 });
 
-
-
-
-
-
-
-
-
-
     }
 
 

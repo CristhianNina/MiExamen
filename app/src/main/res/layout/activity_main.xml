@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="149dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="259dp"
+        android:layout_height="302dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Mi Examen"
-        android:textColor="#000000"
+        android:textColor="#00897B"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,15 +34,34 @@
         android:id="@+id/ma_starB"
         android:layout_width="322dp"
         android:layout_height="49dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/round_corner"
         android:text="Comenzar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:backgroundTint="#E91E63"
+        app:backgroundTint="#1E88E5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_tittle" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@drawable/round_corner"
+        android:onClick="Examen"
+        android:text="Examen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ma_starB"
+        app:layout_constraintVertical_bias="0.294" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

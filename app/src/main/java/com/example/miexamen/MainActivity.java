@@ -1,8 +1,5 @@
 package com.example.miexamen;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
-
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -10,10 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView tittle;
     private Button start;
+
 
 
     @Override
@@ -38,4 +39,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    public void Examen(View view){
+        Intent examen = new Intent(this, ExamenActivity.class);
+        startActivity(examen);
+
+    }
+
+
+
 }

@@ -143,7 +143,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     private void setQuestion()
     {
-        timer.setText(String.valueOf(10));
+        timer.setText(String.valueOf(30));      // numero 30 que se envía como texto para el primer vistazo
 
         question.setText(questionList.get(0).getQuestion());
         option1.setText(questionList.get(0).getOptionA());
@@ -162,10 +162,10 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     private void startTimer()
     {
-        countDown = new CountDownTimer(12000, 1000) {
+        countDown = new CountDownTimer(32000, 1000) {       //30000 son los 30 segundos
             @Override
             public void onTick(long millisUntilFinished) {
-                if(millisUntilFinished < 10000)
+                if(millisUntilFinished < 30000)     // si el contador es menor a 30 entonces recien comienza
                     timer.setText(String.valueOf(millisUntilFinished / 1000));
             }
 

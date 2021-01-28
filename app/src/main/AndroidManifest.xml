@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiExamen">
-        <activity android:name=".ScoreActivity"></activity>
+        <activity android:name=".ExamenActivity"></activity>
+        <activity android:name=".ScoreActivity" />
         <activity android:name=".QuestionActivity" />
         <activity android:name=".SetsActivity" />
         <activity android:name=".CategoryActivity" />
@@ -20,9 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
