@@ -9,35 +9,56 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="259dp"
-        android:layout_height="302dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="251dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
+
     <TextView
         android:id="@+id/main_tittle"
-        android:layout_width="260dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="233dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/arizonia"
         android:text="Hablandate"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
-        android:textSize="56sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/adivinalo"
+        android:layout_width="322dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="@font/bowlby_one"
+        android:onClick="Adivinalo"
+        android:text="Adivinalo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#1EE5BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tittle" />
 
     <Button
         android:id="@+id/ma_starB"
         android:layout_width="322dp"
         android:layout_height="49dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/round_corner"
         android:fontFamily="@font/bowlby_one"
         android:text="Practicar"
@@ -46,9 +67,9 @@
         android:textSize="24sp"
         app:backgroundTint="#1E88E5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_tittle" />
+        app:layout_constraintTop_toBottomOf="@+id/adivinalo" />
 
     <Button
         android:id="@+id/button"
@@ -64,10 +85,27 @@
         app:backgroundTint="#8E24AA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ma_starB"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.22" />
+
+    <Button
+        android:id="@+id/Acerca"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="@font/bowlby_one"
+        android:onClick="Acerca"
+        android:text="Acerca"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:backgroundTint="#D32F2F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.32" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

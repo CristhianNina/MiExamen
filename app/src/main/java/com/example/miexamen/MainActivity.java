@@ -45,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void Adivinalo(View view){
+        Intent adivinalo = new Intent(this, Inicio.class);
+        startActivity(adivinalo);
+
+    }
+
+    public void Acerca(View view){
+        Intent acerca = new Intent(this, Acerca.class);
+        startActivity(acerca);
+
+    }
+
 
 
 }

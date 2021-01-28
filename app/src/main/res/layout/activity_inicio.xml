@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:background="@drawable/main_background">
+
+    <Button
+        android:id="@+id/jugar"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/respuestas"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/respuestas"
+        android:layout_alignRight="@+id/respuestas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="57dp"
+        android:text="@string/jugar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/adivinalo"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/respuestas"
+        android:layout_width="183dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginBottom="182dp"
+        android:text="@string/respuestas" />
+
+</RelativeLayout>
