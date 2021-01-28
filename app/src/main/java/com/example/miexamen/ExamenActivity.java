@@ -29,11 +29,13 @@ public class ExamenActivity extends AppCompatActivity {
     TextView mTextViewRecibidoP4;
     TextView mTextViewRecibidoP5;
 
+
     EditText mEditTextR1;
     EditText mEditTextR2;
     EditText mEditTextR3;
     EditText mEditTextR4;
     EditText mEditTextR5;
+    EditText mEditTextNombre;
 
     Button mButtonEnviarRespuestas;
 
@@ -58,6 +60,7 @@ public class ExamenActivity extends AppCompatActivity {
         mEditTextR3 = findViewById(R.id.editTextR3);
         mEditTextR4 = findViewById(R.id.editTextR4);
         mEditTextR5 = findViewById(R.id.editTextR5);
+        mEditTextNombre = findViewById(R.id.editTextNombre);
 
         mButtonEnviarRespuestas = findViewById(R.id.btnEnviarRespuestas);
 
@@ -77,6 +80,11 @@ public class ExamenActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 EnviarRespuesta1();
+                EnviarRespuesta2();
+                EnviarRespuesta3();
+                EnviarRespuesta4();
+                EnviarRespuesta5();
+                EnviarNombreEstudiante();
 
             }
         });
@@ -168,7 +176,7 @@ public class ExamenActivity extends AppCompatActivity {
         map.put("Respuesta1", respuesta1);
 
 
-        mFirestore.collection("Examen").document("10").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+        mFirestore.collection("Examen").document("R1").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Toast.makeText(ExamenActivity.this, "Se enviaron los datos CORRECTAMENTE", Toast.LENGTH_SHORT).show();
@@ -183,5 +191,135 @@ public class ExamenActivity extends AppCompatActivity {
 
 
     }
+
+
+
+    private void EnviarRespuesta2() {
+        //convertimos
+        String respuesta2 = mEditTextR2.getText().toString();
+        //cramos campos enFirebase
+        Map<String, Object> map = new HashMap<>();
+        map.put("Respuesta2", respuesta2);
+
+
+        mFirestore.collection("Examen").document("R2").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(ExamenActivity.this, "Se enviaron los datos CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ExamenActivity.this, "No se pudieron crear los datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+    }
+
+
+
+    private void EnviarRespuesta3() {
+        //convertimos
+        String respuesta3 = mEditTextR3.getText().toString();
+        //cramos campos enFirebase
+        Map<String, Object> map = new HashMap<>();
+        map.put("Respuesta3", respuesta3);
+
+
+        mFirestore.collection("Examen").document("R3").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(ExamenActivity.this, "Se enviaron los datos CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ExamenActivity.this, "No se pudieron crear los datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+    }
+
+
+
+
+
+    private void EnviarRespuesta4() {
+        //convertimos
+        String respuesta4 = mEditTextR4.getText().toString();
+        //cramos campos enFirebase
+        Map<String, Object> map = new HashMap<>();
+        map.put("Respuesta4", respuesta4);
+
+
+        mFirestore.collection("Examen").document("R4").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(ExamenActivity.this, "Se enviaron los datos CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ExamenActivity.this, "No se pudieron crear los datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+    }
+
+
+
+    private void EnviarRespuesta5() {
+        //convertimos
+        String respuesta5 = mEditTextR5.getText().toString();
+        //cramos campos enFirebase
+        Map<String, Object> map = new HashMap<>();
+        map.put("Respuesta5", respuesta5);
+
+
+        mFirestore.collection("Examen").document("R5").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(ExamenActivity.this, "Se enviaron los datos CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ExamenActivity.this, "No se pudieron crear los datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+
+
+    private void EnviarNombreEstudiante() {
+        //convertimos
+        String nombreEstudiante = mEditTextNombre.getText().toString();
+        //cramos campos enFirebase
+        Map<String, Object> map = new HashMap<>();
+        map.put("Nombre", nombreEstudiante);
+
+
+        mFirestore.collection("Examen").document("Nombre_Est").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(ExamenActivity.this, "Se enviaron los datos CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ExamenActivity.this, "No se pudieron crear los datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+
 
 }

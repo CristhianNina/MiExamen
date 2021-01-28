@@ -10,14 +10,15 @@
     tools:context=".ExamenActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/editTextNombre"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="EXAMEN"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#62F6E5" />
+        android:layout_height="41dp"
+        android:background="@drawable/progress_background"
+        android:ems="10"
+        android:hint="Ingrese su nombre"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textViewRecibidoP1"
@@ -136,11 +137,13 @@
         android:layout_width="277dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_200"
+        android:background="@drawable/round_corner"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Enviar Respuestas"
         android:textColor="#FFFFFF" />
+
+
 
 
 </LinearLayout>
