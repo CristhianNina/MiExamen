@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#F44336"
+        android:background="@color/colorAzul"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
             android:id="@+id/quest_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F44336"
+            android:background="@color/colorAzul"
             android:gravity="center"
             android:padding="8dp"
             android:text="1/10"
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:layout_margin="16dp"
-            android:background="#F44336"
+            android:background="@color/colorAzul"
             android:gravity="center"
             android:text="Pregunta"
             android:textColor="@color/white"
@@ -70,7 +70,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:backgroundTint="#FF9800" />
+            app:backgroundTint="@color/colorCeleste" />
 
 
         <Button
@@ -86,7 +86,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:backgroundTint="#FF9800" />
+            app:backgroundTint="@color/colorCeleste" />
 
 
         <Button
@@ -102,7 +102,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:backgroundTint="#FF9800" />
+            app:backgroundTint="@color/colorCeleste" />
 
         <Button
             android:id="@+id/option4"
@@ -117,7 +117,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:backgroundTint="#FF9800" />
+            app:backgroundTint="@color/colorCeleste" />
 
     </LinearLayout>
 
@@ -128,7 +128,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/round_corner"
-        android:backgroundTint="#E99C03"
+        android:backgroundTint="@color/colorLila"
         android:gravity="center"
         android:text="30"
         android:textColor="@color/white"

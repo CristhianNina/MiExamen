@@ -18,6 +18,7 @@
         android:ems="10"
         android:hint="Ingrese su nombre"
         android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -25,7 +26,7 @@
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="Enunciado 1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Respuesta"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF" />
 
 
     <TextView
@@ -62,7 +64,8 @@
         android:layout_height="55dp"
         android:ems="10"
         android:hint="Respuesta"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#F8F3F3" />
 
 
     <TextView
@@ -84,7 +87,8 @@
         android:layout_height="55dp"
         android:ems="10"
         android:hint="Respuesta"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FAF6F6" />
 
 
     <TextView
@@ -106,7 +110,8 @@
         android:layout_height="55dp"
         android:ems="10"
         android:hint="Respuesta"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF" />
 
 
     <TextView
@@ -128,7 +133,8 @@
         android:layout_height="55dp"
         android:ems="10"
         android:hint="Respuesta"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF" />
 
 
     <Button
